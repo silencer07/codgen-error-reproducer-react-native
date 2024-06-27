@@ -1,0 +1,32 @@
+buildscript {
+  ext.safeExtGet = {prop, fallback ->
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+  }
+  repositories {
+    mavenCentral()
+    google()
+  }
+  dependencies {
+    classpath("com.android.tools.build:gradle")
+    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.9.22')}")
+  }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'com.facebook.react'
+apply plugin: "org.jetbrains.kotlin.android:${safeExtGet('kotlinVersion', '1.9.22')}"
+
+android {
+  compileSdkVersion safeExtGet('compileSdkVersion', 34)
+  namespace "com.meccabrands.SplashScreen"
+}
+
+repositories {
+  mavenCentral()
+  google()
+}
+
+dependencies {
+  classpath("com.android.tools.build:gradle")
+  implementation 'com.facebook.react:react-native'
+}
