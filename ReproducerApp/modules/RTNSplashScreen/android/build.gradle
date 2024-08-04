@@ -3,18 +3,17 @@ buildscript {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
   }
   repositories {
-    mavenCentral()
     google()
+    gradlePluginPortal()
   }
   dependencies {
-    classpath("com.android.tools.build:gradle")
-    classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${safeExtGet('kotlinVersion', '1.9.22')}")
+    classpath("com.android.tools.build:gradle:7.3.1")
   }
 }
 
 apply plugin: 'com.android.library'
 apply plugin: 'com.facebook.react'
-apply plugin: "org.jetbrains.kotlin.android:${safeExtGet('kotlinVersion', '1.9.22')}"
+apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
   compileSdkVersion safeExtGet('compileSdkVersion', 34)
@@ -27,6 +26,5 @@ repositories {
 }
 
 dependencies {
-  classpath("com.android.tools.build:gradle")
   implementation 'com.facebook.react:react-native'
 }
