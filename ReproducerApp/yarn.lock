@@ -8334,11 +8334,11 @@ __metadata:
 
 "rtn-splash-screen@file:./modules/RTNSplashScreen::locator=ReproducerApp%40workspace%3A.":
   version: 0.0.1
-  resolution: "rtn-splash-screen@file:./modules/RTNSplashScreen#./modules/RTNSplashScreen::hash=77c3d0&locator=ReproducerApp%40workspace%3A."
+  resolution: "rtn-splash-screen@file:./modules/RTNSplashScreen#./modules/RTNSplashScreen::hash=132ffa&locator=ReproducerApp%40workspace%3A."
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 9d91ef0b65988fe566e7b2c8cda8092086feb90d5ec2bd151fc35ec4f99d867d06d8e924a1acc25919e36b637f4d6177590329182db1113cb83e04df8127899a
+  checksum: 5218507fd35e67de03abc7d291ff03230198a77fff8e8bafa27154ea9b0e19aacba7466fc0f6835ccd89e7e87815d40762d546886a0b161c55538983716d3845
   languageName: node
   linkType: hard
 
