@@ -31,7 +31,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Yarn Install
-        run: yarn install --immutable-cache
+        run: yarn install --immutable
         working-directory: ReproducerApp
 
       - name: Yarn Build Android Debug
