@@ -31,7 +31,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Yarn Install
-        run: yarn install
+        run: yarn config set enableImmutableInstalls false && yarn install
         working-directory: ReproducerApp
 
       - name: Yarn Build Android Debug
