@@ -3016,7 +3016,7 @@ __metadata:
     react: 18.2.0
     react-native: 0.74.2
     react-test-renderer: 18.2.0
-    rtn-splash-screen: ./modules/RTNSplashScreen
+    rtn-splash-screen: ./RTNSplashScreen
     typescript: 5.0.4
   languageName: unknown
   linkType: soft
@@ -8332,13 +8332,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rtn-splash-screen@file:./modules/RTNSplashScreen::locator=ReproducerApp%40workspace%3A.":
+"rtn-splash-screen@file:./RTNSplashScreen::locator=ReproducerApp%40workspace%3A.":
   version: 0.0.1
-  resolution: "rtn-splash-screen@file:./modules/RTNSplashScreen#./modules/RTNSplashScreen::hash=132ffa&locator=ReproducerApp%40workspace%3A."
+  resolution: "rtn-splash-screen@file:./RTNSplashScreen#./RTNSplashScreen::hash=ff39a8&locator=ReproducerApp%40workspace%3A."
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 5218507fd35e67de03abc7d291ff03230198a77fff8e8bafa27154ea9b0e19aacba7466fc0f6835ccd89e7e87815d40762d546886a0b161c55538983716d3845
+  checksum: d697feb69155e4dc714a52461f3cd3e60999a200e173deb3744d156fc99084e205f8f2b5327ef53117bb6db027287034df00b1f5efa3a9d400ac2b5e8e5cc131
   languageName: node
   linkType: hard
 
