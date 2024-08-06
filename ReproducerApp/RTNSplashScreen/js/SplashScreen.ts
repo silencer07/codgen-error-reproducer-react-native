@@ -1,6 +1,4 @@
-import { TurboModuleRegistry } from 'react-native';
-
-import type { TurboModule } from 'react-native/Libraries/TurboModule/RCTExport';
+import {TurboModule, TurboModuleRegistry} from 'react-native';
 
 export interface Spec extends TurboModule {
   hide(): void;
