@@ -18,7 +18,7 @@
     "type": "modules",
     "jsSrcsDir": "js",
     "android": {
-      "javaPackageName": "com.meccabrands.SplashScreen"
+      "javaPackageName": "com.meccabrands.splashscreen"
     }
   }
 }

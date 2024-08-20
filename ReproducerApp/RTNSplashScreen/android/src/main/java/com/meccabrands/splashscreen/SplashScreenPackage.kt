@@ -1,4 +1,4 @@
-package com.meccabrands.SplashScreen;
+package com.meccabrands.splashscreen;
 
 import com.facebook.react.TurboReactPackage
 import com.facebook.react.bridge.NativeModule
