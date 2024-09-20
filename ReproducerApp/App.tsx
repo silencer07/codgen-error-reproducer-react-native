@@ -5,9 +5,10 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  Pressable,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -25,14 +26,25 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import RTNCalculator from 'rtn-calculator/js/NativeRTNCalculator';
+
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
+  const [result, setResult] = useState<number | null>(null);
   return (
     <View style={styles.sectionContainer}>
+      <Text style={{marginLeft: 20, marginTop: 20}}>3+7={result ?? '??'}</Text>
+      <Pressable
+        onPress={async () => {
+          const value = await RTNCalculator?.add(3, 7);
+          setResult(value ?? null);
+        }}>
+        <Text>Compute</Text>
+      </Pressable>
       <Text
         style={[
           styles.sectionTitle,

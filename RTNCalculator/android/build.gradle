@@ -13,11 +13,10 @@ buildscript {
 
 apply plugin: 'com.android.library'
 apply plugin: 'com.facebook.react'
-apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
-  compileSdkVersion safeExtGet('compileSdkVersion', 34)
-  namespace "com.meccabrands.SplashScreen"
+  compileSdkVersion safeExtGet('compileSdkVersion', 33)
+  namespace "com.rtncalculator"
 }
 
 repositories {
