@@ -2,9 +2,9 @@ package com.rtncalculator
 
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
-import com.rtncalculator.NativeCalculatorSpec
+import com.rtncalculator.NativeRTNCalculatorSpec
 
-class CalculatorModule(reactContext: ReactApplicationContext) : NativeCalculatorSpec(reactContext) {
+class CalculatorModule(reactContext: ReactApplicationContext) : NativeRTNCalculatorSpec(reactContext) {
 
   override fun getName() = NAME
 
